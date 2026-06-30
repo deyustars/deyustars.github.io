@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deyu — keep one moment a day</title>
+<meta name="description" content="Deyu is a small, private Android app. Keep one true sentence a day; it becomes a star in a jar that fills over the year, and your moments quietly return on their anniversaries. Local-only — no account, no tracking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-top:#0E1430; --bg-bot:#1B2347; --ink:#EAE7F2; --muted:#9AA0BD;
+    --line:rgba(234,231,242,.12); --card:rgba(234,231,242,.04);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; color:var(--ink); line-height:1.65;
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    background:linear-gradient(180deg,var(--bg-top),var(--bg-bot)) fixed;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:960px;margin:0 auto;padding:0 22px;}
+  h1,h2,h3{font-family:"Newsreader",Georgia,serif;font-weight:500;letter-spacing:.2px;}
+  a{color:var(--ink);}
+  /* hero */
+  header{text-align:center;padding:96px 0 40px;}
+  .word{font-family:"Newsreader",Georgia,serif;font-weight:500;font-size:72px;margin:0;}
+  .tag{font-family:"Newsreader",Georgia,serif;font-size:25px;color:var(--ink);margin:14px 0 6px;}
+  .sub{color:var(--muted);font-size:17px;max-width:34rem;margin:8px auto 0;}
+  /* screenshots */
+  .shots{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;padding:34px 0 8px;}
+  .shots img{width:230px;max-width:42vw;border-radius:18px;border:1px solid var(--line);
+    box-shadow:0 18px 50px rgba(0,0,0,.45);}
+  /* value props */
+  .props{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:44px 0;}
+  .prop{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;}
+  .prop h3{margin:0 0 6px;font-size:19px;}
+  .prop p{margin:0;color:var(--muted);font-size:15px;}
+  /* lede */
+  .lede{max-width:38rem;margin:8px auto 0;text-align:center;color:var(--ink);font-size:18px;}
+  /* soon + footer */
+  .soon{text-align:center;padding:18px 0 8px;}
+  .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;
+    padding:9px 18px;color:var(--muted);font-size:14px;}
+  footer{border-top:1px solid var(--line);margin-top:48px;padding:28px 0 60px;text-align:center;
+    color:var(--muted);font-size:14px;}
+  footer a{color:var(--muted);text-decoration:underline;text-underline-offset:3px;}
+  @media(max-width:680px){
+    .word{font-size:54px;} .props{grid-template-columns:1fr;}
+    header{padding:64px 0 24px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1 class="word">Deyu</h1>
+    <p class="tag">Keep one moment a day. It becomes your year.</p>
+    <p class="sub">A private memory jar for Android. One true sentence a day folds into a star and settles into a glass jar that fills over the year.</p>
+  </header>
+
+  <section class="shots">
+    <img src="assets/shot-jar.png" alt="The Deyu jar filling with colourful stars">
+    <img src="assets/shot-flashback.png" alt="A moment from a year ago, quietly returned">
+    <img src="assets/shot-reflect.png" alt="Comparing two moments — which one stays with you">
+  </section>
+
+  <p class="lede">Write one sentence. Watch the jar fill. And let your moments come back to you — a week, a month, or a year on, to the day.</p>
+
+  <section class="props">
+    <div class="prop"><h3>Yours alone</h3><p>No account, no servers, no analytics, no ads. Everything stays on your phone — the app has no internet permission.</p></div>
+    <div class="prop"><h3>No streaks, no pressure</h3><p>A quiet, optional reminder — only on days you haven't kept a moment. Nothing to keep up, nothing to lose.</p></div>
+    <div class="prop"><h3>Moments that return</h3><p>A kept moment quietly comes back on its exact anniversary, so the year you lived stays close.</p></div>
+  </section>
+
+  <div class="soon"><span class="pill">Coming to Google Play</span></div>
+
+  <footer>
+    <p><a href="privacy-policy.html">Privacy</a> · <a href="mailto:deyustars+support@gmail.com">Contact</a></p>
+    <p>© 2026 deyustars. Deyu is local-only — your moments stay on your phone.</p>
+  </footer>
+
+</div>
+</body>
+</html>
