@@ -43,6 +43,11 @@
   .soon{text-align:center;padding:18px 0 8px;}
   .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;
     padding:9px 18px;color:var(--muted);font-size:14px;}
+  /* The page's only call to action. Quiet by design (VOICE): a door, not a shout. */
+  a.pill{color:var(--ink);border-color:rgba(234,231,242,.28);text-decoration:none;
+    background:var(--card);transition:border-color .2s ease,background .2s ease;}
+  a.pill:hover,a.pill:focus-visible{border-color:rgba(234,231,242,.5);
+    background:rgba(234,231,242,.08);}
   footer{border-top:1px solid var(--line);margin-top:48px;padding:28px 0 60px;text-align:center;
     color:var(--muted);font-size:14px;}
   footer a{color:var(--muted);text-decoration:underline;text-underline-offset:3px;}
@@ -75,7 +80,7 @@
     <div class="prop"><h3>Moments that return</h3><p>A kept moment quietly comes back on its exact anniversary, so the year you lived stays close.</p></div>
   </section>
 
-  <div class="soon"><span class="pill">Coming to Google Play</span></div>
+  <div class="soon"><a class="pill" href="https://play.google.com/store/apps/details?id=app.deyu">Get Deyu on Google Play</a></div>
 
   <footer>
     <p><a href="privacy-policy.html">Privacy</a> · <a href="mailto:deyustars+support@gmail.com">Contact</a></p>

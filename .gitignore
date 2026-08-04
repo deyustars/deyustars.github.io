@@ -1,2 +1,25 @@
+# 04_site — PUBLIC repo (deyustars.github.io). Everything here goes LIVE on the web.
+# Only intentional public files (index.html, privacy-policy.html, assets/) belong here.
+
+# === Secrets — NEVER commit ===
+*.jks
+*.keystore
+*.properties
+.env
+*.key
+*.pem
+
+# === Personal data & local-only — NEVER commit (this is a PUBLIC site!) ===
+*.local
+*.local.*
+watch-names.local.txt
+beta-testers*
+testers*
+*-feedback.*
+drafts/
+notes/
+*-internal.*
+
+# === OS ===
 .DS_Store
 Thumbs.db
